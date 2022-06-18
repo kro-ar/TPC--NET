@@ -1,153 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<!--icono pagina-->
-	<link rel="shortcut icon" href="../triangulo.ico" type="image/x-icon">
-	<!--css-->
-	<link rel="stylesheet" href="../css/estilos.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	    <!--fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>TPC NET CONTACTO</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Bootstrap CSS -->
+   <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!--css propio-->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <!--css animaciones wow-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!--icono-->
+  <link rel="shortcut icon" href="../logo/triangulo.ico" type="image/x-icon">
+  <!--fonts awesome iconos-->
+  <script src="https://kit.fontawesome.com/490f4c8634.js" crossorigin="anonymous"></script>
+    
+  <title>TPC NET</title>
 </head>
 <body>
-	<div class="grid">
-		<div class="header">
-			<a href="../index.html" class="logo">
-				<img src="../triangulo.png" alt="logo">
-				<h2 class="nombre-empresa">TPC NET</h2>
-			</a>
-			<nav>
-				<a href="../index.html" class="nar-link1">Inicio</a>
-				<a href="servicios.html" class="nar-link2">Servicios</a>
-				<a href="contacto.html" class="nar-link3">Contacto</a>
-			</nav>
-		</div>
-		<div class="principal">
-			<div class="caja1">
-				<div class="wow animate__fadeIn">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-nav-color sticky-top" id="nav-menu">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="../index.html" >
+          <img src="../logo/triangulo.png" alt="logo-tpc-net" > TPC NET
+        </a>
+        <!--hamburguesa-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--hamburguesa-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdown" id="drop-menu">
+                <li><a class="dropdown-item" href="servicios/hogar.html">Hogar</a></li>
+                <li><a class="dropdown-item" href="servicios/edificio.html">Edificio</a></li>
+                <li><a class="dropdown-item" href="servicios/comercio.html">Comercios</a></li>
+                <li><a class="dropdown-item" href="servicios/empresas.html">Empresas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!--ends navbar-->
+
+    <!--imagen/animacion presentacion-->
+    <header class="py-3">
+      
+      <div class="intro">
+        <div class="wow animate__fadeIn">
 					<h1 class="animate__animated  animate__fadeInDown">TPC NET</h1>
 					<h2 class="animate__animated animate__fadeInUp">Todo por Cable</h2>
 				</div>
-			</div>
-			<div class="caja2">
-				<div class="caja-text2">
-					<h1 class="caja-titulo2">¿Consultas?</h1>
-					<p>
-						Contamos con cobertura a nivel nacional,conviertiendonos en el mejor aliado en la satisfaccion de sus necesidades
-					</p>
-				</div>
-			</div>
-			<div class="caja3">
-				<div class="container5">
-				<div class="info">
-					<div class="caja-titulo3">
-						Brindamos soluciones en base a tus medidas de seguridad
-						<div class="caja-text">
-							Complete el formulario a continuacion y le responderemos a la brevedad <br>
-							Tambien puede contactarnos por:
-							<ul>
-								<li>
-								  <a href="mailto:arias.carolina.aylen@gmail.com?Subject=Interesado%en%sus%servicios">
-									  <img src="../img/correo.png" alt="mail-tpc-net"> Nuestra casilla de mail </a>
-								</li>
-								<li>
-								  <a href="https://wa.me/1139023262?text=Me%20interesa%20consultar%20un%20presupuesto%">
-									  <img src="../img/wspp.png" alt="telefono-tpc-net"> Via Whatsapp a traves de mensaje</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				</div>
-				<div class="container6">
-					<div class="info">
-						<form action="post" class="form-service">
-							<div class="la_in">
-								<ul>
-									<li>
-									  <label for="nombre">Nombre y Apellido: </label>
-									  <input type="text" name="nombre" class="campo" placeholder="Juan Carlos Bodoque"> 
-									</li>
-									<li>
-									  <label for="tel">Telefono de contacto: </label>
-									  <input type="text" name="tel" class="campo" placeholder="+54 11 xxxxx">
-									</li>
-									<li>
-									  <label for="mail">Mail de contacto: </label>
-									  <input type="text" name="email" class="campo" placeholder="tuemail@correo.com">
-									</li>
-								</ul>
-							</div>
-							  <div class="radio">
-								  <label for="radio" >Por favor seleccione un tipo de servicio</label>
-								<ul>
-									<li>
-										<label for="hogar">Hogar </label>
-										<input type="radio" name="hogar" id="tipo-ser">
-									</li>
-									<li>
-										<label for="edificio">Edificio </label>
-										<input type="radio" name="edificio" id="tipo-ser">
-									</li>
-									<li>
-										<label for="comercio">Comercio </label>
-										<input type="radio" name="comercio" id="tipo-ser">
-									</li>
-									<li>
-										<label for="empresa">Empresa </label>
-										<input type="radio" name="empresa" id="tipo-ser">
-									</li>
-								</ul>  
-							  </div>
-							<textarea name="mensaje" cols="30" rows="5" placeholder="Escriba su consulta aqui..."></textarea> <br>
-							<input type="submit" name="enviar" value="Enviar" class="btn-enviar">
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="caja4">
-			</div>
-		</div>
-		<div class="footer">
-			<div class="left">
-				<ul>
-					<li>TPC NET</li>
-					<li>Mas de 20 años en servicio</li>
-					<li>
-						<button class="btn">
-							<a href="contacto.html">Contacto</a>
-						</button>
-					</li>
-				</ul>
-			</div>
-			
-			<div class="right">
-				<ul>
-					<li>
-						<a href="https://wa.me/1139023262?text=Me%20interesa%20consultar%20un%20presupuesto%">
-							<img src="../img/wspp.png" alt="telefono-tpc-net"> Nuestro Whatsapp
-						</a>
-					</li>
-					<li>
-						<a href="mailto:arias.carolina.aylen@gmail.com?Subject=Interesado%en%sus%servicios">
-							<img src="../img/correo.png" alt="mail-tpc-net"> Nuestro Mail
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="copy">Copyright © Carolina Arias</div>
-		</div>
-	</div>
-	<!--script animacion-->
-	<script src="js/wow.min.js"></script>
-	<script>
-	new WOW().init();
-	</script>
+      </div>
+    </header>
+    <!-- ends imagen/animacion presentacion-->
+
+    <!--cuerpo-->
+  <div class="container">
+
+  <div class="row mt-5 mb-5">
+        <div class="col-sm-12 col-lg-4">
+            <p class="form-titulo">¿Como podemos ayudarte?</p>
+        </div>
+        <div class="col-sm-12  col-lg-8">
+            <p class="form-texto">Contamos con cobertura a nivel nacional,conviertiendonos en el mejor aliado en la satisfaccion de sus necesidades</p>
+        </div><!--arriba-->
+
+        <!--abajo-->
+        <div class="col-sm-12 col-lg-4 ">
+            <p class="form-titulo">
+                Brindamos soluciones en base a tus medidas de seguridad
+            </p>
+            <p class="form-texto">
+                Complete el formulario con los datos requeridos <br>
+                Y nos pondremos en contacto a la brevedad <br>
+                Tambien puede contactarnos por:
+            </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-decoration-none form-texto" href="https://www.facebook.com/todoporcable/" >
+                            <img src="../img/iconos/facebook.png" alt="tpcnet-redes" > Facebook
+                        </a>
+                    </li>
+                    <li> 
+                      <a class="text-decoration-none form-texto" href="https://wa.link/lk8vf2" >
+                            <img src="../img/iconos/telefono.png" alt="tpcnet-redes" > Whatsapp
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none form-texto" href="mailto:contacto@tpcnet.com.ar?Subject=Interesado%en%sus%servicios" >
+                            <img src="../img/iconos/gmail.png" alt="tpcnet-redes" > Correo Electronico
+                        </a>
+                    </li>
+                </ul>
+      </div>
+  <!--FORMULARIO DE CONTACTO-->
+            <div class="col-sm-12 col-lg-8  text-white">
+                <div class="row formulario ">
+                    <div class="col-lg-8 mt-2">
+                        <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+                        <input type="nombre" class="form-control" id="inputNombre" placeholder="Juan Perez">
+                      </div>
+                      <div class="col-lg-4 mt-2">
+                        <label for="inputEmail" class="form-label">Mail de Contacto</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="correo@mail.com">
+                      </div>
+                      <div class="col-lg-4 mt-3">
+                        <label for="inputTel" class="form-label">Numero de Contacto</label>
+                        <input type="tel" class="form-control" id="inputTel" placeholder="+54 ...">
+                      </div>
+                      <div class="col-lg-4 mt-3">
+                        <label for="inputCity" class="form-label">Ubicacion</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Buenos Aires">
+                      </div>
+                      <div class="col-lg-4 mt-3">
+                        <label for="inputServicio" class="form-label">Servicio a consultar</label>
+                        <select id="inputServicio" class="form-select">
+                          <option selected>Servicio</option>
+                          <option>Hogar</option>
+                          <option>Edificio</option>
+                          <option>Comercio</option>
+                          <option>Empresa</option>
+                        </select>
+                      </div>
+                      <div class="col-12 m-3 text-center">
+                        <button type="submit" class="btn btn-color">Enviar</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+<!--ends FORMULARIO DE CONTACTO-->
+  </div>
+  <!--end cuerpo-->
+
+
+  <!--footer-->
+  <footer>
+        <div class="container-fluid">
+                
+            <div class="row p-3 pb-1 bg-nav-color">
+
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <p class="footer-titulo">TPC NET</p>
+                    <p class="footer-texto">Todo Por Cable</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <p class="footer-titulo mb-2">Servicios</p>
+                    <div class="mb-2 footer-texto">
+                        <a class=" text-reset text-decoration-none" href="servicios/hogar.html">Hogar</a> 
+                    </div>
+                    <div class="mb-2 footer-texto">
+                        <a class=" text-reset text-decoration-none" href="servicios/edificio.html">Edificio</a> 
+                    </div>
+                    <div class="mb-2 footer-texto">
+                        <a class=" text-reset text-decoration-none" href="servicios/comercio.html">Comercio</a> 
+                    </div>
+                    <div class="mb-2 footer-texto">
+                        <a class=" text-reset text-decoration-none" href="servicios/empresas.html">Empresa</a> 
+                    </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <p class=" footer-titulo mb-2">Redes</p>
+                        <div class="mb-2 footer-texto">
+                            <a class=" text-reset text-decoration-none" href="https://www.facebook.com/todoporcable/">Facebook</a> 
+                        </div>
+                        <div class="mb-2 footer-texto">
+                            <a class=" text-reset text-decoration-none" href="mailto:contacto@tpcnet.com.ar?Subject=Interesado%en%sus%servicios">Email</a> 
+                        </div>
+                        <div class="mb-2 footer-texto">
+                            <a class=" text-reset text-decoration-none" href="https://wa.link/lk8vf2">Whatsapp</a> 
+                        </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                     <p class="mb-2 footer-titulo">Ubicacion</p>
+                    <div class="mb-3 footer-texto">
+                        <a class=" text-reset text-decoration-none" href="https://goo.gl/maps/KHRagJd5mZ9hpoQf7">Buenos Aires,Argentina</a> 
+                    </div>
+                </div>
+                <div class="col-xs-12 pt-2 ">
+                    <p class=" copy text-center">Copyright © Carolina Arias</p> 
+                </div>
+            </div>
+        </div>
+  </footer>
+  <!--ends footer-->
+          
+<!-- Bootstrap Bundle with Popper -->
+ <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
