@@ -146,3 +146,23 @@ header{
 .copy{
     color: #606060;
 }
+@media only screen and (max-width:576px) {
+    .card-servicios-row {
+        align-content: center;
+        justify-content: center;
+    }
+    .card-servicios{
+        width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	.texto-banner {
+		font-size: 15px;
+	}
+    .section-nosotros p{
+        font-size: 12px;
+    }
+}
