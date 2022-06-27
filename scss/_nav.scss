@@ -1,0 +1,19 @@
+nav {
+    background-color: $bg--color;
+  .dropdown-menu{
+    background-color:$bg--color;
+    a:hover{
+        background-color:transparent ;
+        color: $text-orange-light;
+        border: 1px solid $dark-lila;
+        border-radius: 5px;
+    }
+  }
+}
+#nav-menu ul li a {
+
+color: $light-lila;
+    &:hover{
+            color:$dark-lila;
+        }
+}

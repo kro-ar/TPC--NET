@@ -1,0 +1,25 @@
+{
+  "name": "git--github",
+  "version": "1.0.0",
+  "description": "TPC NET : Web creada en el curso Coder House \r Proyecto creado a base unicamente del curso Web Developer de Coder House + Informacion adquirida por fuera",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kro-ar/TPC--NET.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kro-ar/TPC--NET/issues"
+  },
+  "homepage": "https://github.com/kro-ar/TPC--NET#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}
