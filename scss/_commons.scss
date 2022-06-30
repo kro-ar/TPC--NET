@@ -3,6 +3,13 @@ body{
     font-family: $font;
 }
 //intro-animacion
+//mxin
+@mixin boton ($bg, $fontC) {
+  background-color: $bg;
+  color: $fontC;
+  
+}
+//intro animacion
 header{
     background-image: url(../assets/img/intro.png);
     .intro {
@@ -21,6 +28,7 @@ header{
         }
     }
 }
+
 //seccion nosotros
 .titulo{
     color: $text-orange-light;
@@ -49,7 +57,7 @@ header{
         color: $light-yellow;
     }
     .btn-color{
-        background-color: $text-orange-dark;
+        @include boton(#ffa500,#222 )
     }
 }
 //banner 1
@@ -69,8 +77,7 @@ header{
 .caja-contacto {
     border: 1px solid $light-peach;
     .btn-color{
-        background-color: $text-orange-dark;
-        color: $body-grey;
+      @include boton(#ffa500,#222 )
     }
   }
   
