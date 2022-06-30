@@ -19,7 +19,7 @@ body {
   font-family: "Source Sans Pro", sans-serif; }
 
 header {
-  background-image: url(../assets/img/intro.png); }
+  background-image: url(../assets/img/intro.webp); }
   header .intro {
     display: flex;
     align-items: center;
@@ -55,7 +55,8 @@ header {
   .card-servicios p {
     color: #fff8dc; }
   .card-servicios .btn-color {
-    background-color: #ffa500; }
+    background-color: #ffa500;
+    color: #222; }
 
 .img-banner {
   text-align: center;
@@ -85,6 +86,9 @@ header {
   border: 1px solid #fae9d7; }
   .formulario label {
     color: #f6effd; }
+  .formulario .btn-color {
+    background-color: #ffa500;
+    color: #222; }
 
 .form-titulo {
   color: #f4c46d;

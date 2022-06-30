@@ -2,9 +2,14 @@ body{
     background-color: $body-grey;
     font-family: $font;
 }
+//mixin
+@mixin boton ($bg ,$fontC) {
+  background-color: $bg;
+  color: $fontC;
+}
 //intro-animacion
 header{
-    background-image: url(../assets/img/intro.png);
+    background-image: url(../assets/img/intro.webp);
     .intro {
         display: flex;
         align-items: center;
@@ -49,7 +54,7 @@ header{
         color: $light-yellow;
     }
     .btn-color{
-        background-color: $text-orange-dark;
+        @include boton(#ffa500,#222 )
     }
 }
 //banner 1
@@ -69,8 +74,7 @@ header{
 .caja-contacto {
     border: 1px solid $light-peach;
     .btn-color{
-        background-color: $text-orange-dark;
-        color: $body-grey;
+      @include boton(#ffa500,#222 )
     }
   }
   
@@ -90,6 +94,9 @@ header{
     label {
       color:$light-lila;
     }
+    .btn-color{
+      @include boton(#ffa500,#222 )
+    }
   }
   
   .form-titulo {
@@ -101,3 +108,4 @@ header{
     color:$light-lila;
     font-size: 15px;
   }
+  
