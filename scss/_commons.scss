@@ -8,6 +8,13 @@ body{
   color: $fontC;
 }
 //intro-animacion
+//mxin
+@mixin boton ($bg, $fontC) {
+  background-color: $bg;
+  color: $fontC;
+  
+}
+//intro animacion
 header{
     background-image: url(../assets/img/intro.webp);
     .intro {
@@ -26,6 +33,7 @@ header{
         }
     }
 }
+
 //seccion nosotros
 .titulo{
     color: $text-orange-light;
